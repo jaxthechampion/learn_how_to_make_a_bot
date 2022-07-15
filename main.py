@@ -1,11 +1,10 @@
 from discord.ext import commands
 import os
 import discord
-intents = discord.Intents.default()
-intents.members = True
+
 
 command_prefix = '>>'
-bot = commands.Bot(command_prefix = command_prefix, intents=intents)
+bot = commands.Bot(command_prefix = command_prefix)
 
 guild = bot.get_guild("919793000777908335")
 @bot.event
